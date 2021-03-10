@@ -2,41 +2,65 @@
 
 let names = [{
   name: "akina",
-  word: "hey"
+  //word: "hey"
 }, {
   name: "zak",
-  word: "love you"
+  //word: "love you"
 }, {
   name: "june",
-  word: "sweet"
+  //word: "sweet"
 }, {
   name: "sara",
-  word: "my friend!"
+  //word: "my friend!"
 }, {
   name: "cindia",
-  word: "super!"
+  //word: "super!"
 }, {
   name: "nick",
-  word: "wonderful"
+  //word: "wonderful"
 }, {
   name: "sierra",
-  word: "I'm down"
+  //word: "I'm down"
 }, {
   name: "greg",
-  word: "you can do it"
+  //word: "you can do it"
 }, {
   name: "cris",
-  word: "wanna go get some coffee?"
+  //word: "wanna go get some coffee?"
 }, {
   name: "marta",
-  word: "bless you"
+  //word: "bless you"
 }, {
   name: "miguel",
+  //word: "chao"
+}];
+
+let words = [{
+  word: "hey"
+}, {
+  word: "love you"
+}, {
+  word: "sweet"
+}, {
+  word: "my friend!"
+}, {
+  word: "super!"
+}, {
+  word: "wonderful"
+}, {
+  word: "I'm down"
+}, {
+  word: "you can do it"
+}, {
+  word: "wanna go get some coffee?"
+}, {
+  word: "bless you"
+}, {
   word: "chao"
 }];
 
 let randomIndex;
-
+let randomIndex2;
 // let inconsolata;
 // function preload() {
 //   inconsolata = loadFont('assets/inconsolata.otf');
@@ -74,16 +98,19 @@ function draw() {
 function mousePressed() {
   background(random(240,150,238));
 
+//names
   randomIndex = int(random(names.length));
+  randomIndex2 = int(random(words.length));
   textStyle(NORMAL);
   textFont('Orbitron');
   textAlign(CENTER, CENTER);
   text(names[randomIndex].name, 180, 150);
 
+//words
   textStyle(ITALIC);
   textFont('Homemade Apple');
   textAlign(CENTER, CENTER);
-  text(names[randomIndex].word, 180, 170);
+  text(words[randomIndex2].word, 180, 170);
 
   names.splice(randomIndex, 1);
 
