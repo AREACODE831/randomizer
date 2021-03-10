@@ -106,7 +106,7 @@ function mousePressed() {
   textAlign(CENTER, CENTER);
   text(names[randomIndex].name, 180, 150);
 
-//words
+//words random
   textStyle(ITALIC);
   textFont('Homemade Apple');
   textAlign(CENTER, CENTER);
