@@ -98,7 +98,7 @@ function draw() {
 function mousePressed() {
   background(random(240,150,238));
 
-//names
+//names random
   randomIndex = int(random(names.length));
   randomIndex2 = int(random(words.length));
   textStyle(NORMAL);
